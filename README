@@ -1,0 +1,10 @@
+Meno:  Adam Kučík
+Login: xkucik00
+Vytvorenie: 17.11.2023
+Program:
+Program dhcp-stats má za úlohu analyzovať DHCP komunikáciu a zistiť vyťaženosť
+siete na základe sietového prefixu z pohľadu množstva alokovaných adries.
+V implementácií sú požadované funkcionality zo zadania. Program je bez rozšírení.
+Príklad spustenia:
+./dhcp-stats [-r <filename>] [-i <interface-name>] <ip-prefix> [<ip-prefix> […]]
+Zoznam odovzdaných súborov: dhcp-stats.c

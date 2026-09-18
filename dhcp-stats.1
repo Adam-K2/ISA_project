@@ -1,0 +1,23 @@
+.TH dhcp-stats 1
+.SH NAME
+dhcp-stats \- generating statistics from pcap or from interface
+.SH SYNOPSIS
+.B dhcp-stats
+[\fB\-r\fR \fIFILENAME\fR]
+[\fB\-i\fR \fIINTERFACE\fR]
+[\fIIP-PREFIX\fR]
+.SH DESCRIPTION
+.B dhcp-stats
+dhcp-stats analyzes DHCP communication and keeps statistics about overload. 
+If the overload reaches 50%, the IP address and prefix will be sent to the output. 
+Additionally, the same phrase will be logged in the syslog.
+.SH OPTIONS
+.TP
+.BR \-r " " FILENAME\fR
+Set the input file that has to be pcap.
+.TP
+.BR \-i " " FILENAME\fR
+Select interface, it is supposed to be ethernet.
+.TP
+.BR \-i " " IP-PREFIX\fR
+Network range for statistics generating.
